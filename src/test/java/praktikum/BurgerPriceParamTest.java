@@ -28,17 +28,21 @@ public class BurgerPriceParamTest {
         burger = new Burger();
     }
 
-    @Parameterized.Parameters(name = "Название булочки - {0}, Цена булочки - {1}")
+    @Parameterized.Parameters(name = "Название булочки {0}, Цена булочки {1}")
     public static Object[][] testDateGen() {
         return new Object[][]{
-                {NAME_BLACK_BUN, PRICE_100_0f},
+                {NAME_BUN_WITH_SESAME, PRICE_20_1F},
+                {NAME_RED_BUN, PRICE_300_0f},
                 {NAME_WHITE_BUN, PRICE_200_0f},
-                {NAME_RED_BUN, PRICE_300_0f}
+                {NAME_BLACK_BUN, PRICE_100_0f},
+                {EMPTY_STRING,PRICE_300_0f},
+                {WITH_SYMBOLS_STRING, PRICE_0_0f},
+                {null, PRICE_MINUS_100_0f},
         };
     }
 
     @Test
-    public void setBuns(){
+    public void getPriceBurger(){
         Bun bun = new Bun(name, price);
         burger.setBuns(bun);
         burger.addIngredient(sauce);

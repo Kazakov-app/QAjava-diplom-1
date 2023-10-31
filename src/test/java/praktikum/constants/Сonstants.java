@@ -8,6 +8,7 @@ public class Сonstants {
     public static final float PRICE_20_1F = 20.1F;
     public static final float PRICE_90_0f = 90.0f;
     public static final float PRICE_100_0f = 100.0f;
+    public static final float PRICE_MINUS_100_0f = -100.0f;
     public static final float PRICE_200_0f = 200.0f;
     public static final float PRICE_300_0f = 300.0f;
     public static final String NAME_BUN_WITH_SESAME = "Булочка с кунжутом";
@@ -19,5 +20,7 @@ public class Сonstants {
     public static final String NAME_SPICY_SAUCE = "Spicy-X";
     public static final String NAME_FILLING_CUTLET = "cutlet";
     public static final String NAME_FILLING_DINOSAUR = "dinosaur";
+    public static final String WITH_SYMBOLS_STRING = "!@#$%^&*()";
+    public static final String EMPTY_STRING = "";
 
 }
